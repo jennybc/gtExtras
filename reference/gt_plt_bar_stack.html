@@ -24,7 +24,7 @@ scales::label_???() family of function."><meta property="og:image" content="http
     
     <a class="navbar-brand me-2" href="../index.html">gtExtras</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,26 +93,44 @@ the labels can be controlled via the <code>fmt_fn</code> argument and the
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>gt_object</dt>
 <dd><p>An existing gt table object of class <code>gt_tbl</code></p></dd>
+
+
 <dt>column</dt>
 <dd><p>The column wherein the percent stacked barchart should replace existing data. Note that the data <em>must</em> be represented as a list of numeric values ahead of time.</p></dd>
+
+
 <dt>palette</dt>
 <dd><p>A color palette of length 2 or 3, represented either by hex colors (<code>"#ff4343"</code>) or named colors (<code>"red"</code>).</p></dd>
+
+
 <dt>labels</dt>
 <dd><p>A vector of strings of length 2 or 3, representing the labels for the bar chart, will be colored according to the palette as well.</p></dd>
+
+
 <dt>position</dt>
 <dd><p>An string indicator passed to <code>ggplot2</code> indicating if the bar should be a percent of total <code>"fill"</code> or stacked as the raw values <code>"stack"</code>.</p></dd>
+
+
 <dt>width</dt>
 <dd><p>An integer representing the width of the bar chart in pixels.</p></dd>
+
+
 <dt>fmt_fn</dt>
 <dd><p>A specific function from <code>scales::label_???</code> family. Defaults to <code><a href="https://scales.r-lib.org/reference/label_number.html" class="external-link">scales::label_number()</a></code></p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>An object of class <code>gt_tbl</code>.</p>
+    
+
+<p>An object of class <code>gt_tbl</code>.</p>
     </div>
     <div class="section level2">
     <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a></h2>
-    <p></p><div class="sourceCode r"><pre><code><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gt.rstudio.com/" class="external-link">gt</a></span><span class="op">)</span>
+    
+
+
+<p></p><div class="sourceCode r"><pre><code><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gt.rstudio.com/" class="external-link">gt</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
 
 <span class="va">ex_df</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>
@@ -160,7 +178,7 @@ the labels can be controlled via the <code>fmt_fn</code> argument and the
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.4.</p>
 </div>
 
     </footer></div>
